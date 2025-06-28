@@ -1,0 +1,8 @@
+<core:FragmentDefinition id="_IDGenFragmentDefinition" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="_IDGenDialog" draggable="true" icon="sap-icon://action-settings" title="Good Job" state="Success">
+        <Text id="_IDGenText" text="Hello Finally you learned about Fragment, Hello Finally you learned about Fragment!!" />
+        <endButton>
+            <Button id="_IDGenButton1" text="Close" press="onClosePress"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

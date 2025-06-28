@@ -1,0 +1,82 @@
+<core:FragmentDefinition 
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+<VBox id="_IDGenVBox1">
+    <f:Form id="_IDGenForm1" 
+            editable="true">
+        <!-- Title -->
+        <f:title>
+            <core:Title id="_IDGenTit" 
+                text="My Form" 
+                icon="sap-icon://action-settings"/>
+        </f:title>
+
+        <!-- layout -->
+        <f:layout>
+            <f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout1" 
+                adjustLabelSpan="false"
+                labelSpanL="4" 
+                emptySpanL="0"
+                columnsL="2"
+                labelSpanM="2" 
+                emptySpanM="0"
+                columnsM="1"
+                singleContainerFullSize="false"/>
+        </f:layout>
+
+        <!-- Form Conatiner -->
+        <f:formContainers>
+            <f:FormContainer id="_IDGenFormContainer1" >
+                <f:formElements>
+                    <f:FormElement id="_IDGenFormElement1" label="Name">
+                        <f:fields>
+							<Text id="_IDGenText1" text="{name}" />
+                            <Text id="_IDGenText2" text="{country}" >
+                                <layoutData>
+                                    <l:GridData id="_IDGenGridData1" 
+                                     span="L6 M2 S12"/>
+                                </layoutData>
+                            </Text>
+						</f:fields>
+                    </f:FormElement>
+                    <f:FormElement id="_IDGenFormElement3"  label="Street">
+                        <f:fields>
+							<Text id="_IDGenText3"  text="{street}"/>
+						</f:fields>
+                    </f:FormElement>
+                    <f:FormElement id="_IDGenFormElement4"  label="Landmark">
+                        <f:fields>
+							<Text id="_IDGenText4"  text="{landmark}"/>
+                            <Text id="_IDGenText5"  text="{city}">
+                                <layoutData>
+                                    <l:GridData id="_IDGenGrid" 
+                                     span="L6 M2 S12"/>
+                                </layoutData>
+                            </Text>
+						</f:fields>
+                    </f:FormElement>
+                    <f:FormElement id="_IDGenFormElement5"  label="Phone">
+                        <f:fields>
+                            <Select id="_IDGenSelect"  selectedKey="">
+									<items>
+										<core:Item id="_IDGenItem"  text="+91" key="England"/>
+										<core:Item id="_IDGenItem4"  text="+1" key="Germany"/>
+										<core:Item id="_IDGenItem5"  text="+09" key="USA"/>
+									</items>
+                                <layoutData>
+                                    <l:GridData id="_IDGenGridData2" 
+                                    span="L2 M2 S12"/>
+                                </layoutData>
+                            </Select>
+							<Text id="_IDGenText6" text="{phone}"/>
+						</f:fields>
+                    </f:FormElement>
+                </f:formElements>
+            </f:FormContainer>
+        </f:formContainers>
+    </f:Form>
+</VBox>
+</core:FragmentDefinition>

@@ -1,6 +1,25 @@
-<mvc:View controllerName="sap.ff.formcontrol.controller.Form"
+<mvc:View 
+    controllerName="sap.ff.formcontrol.controller.Form"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+    <!-- <Page id="page" title="{i18n>title}">
+        <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+            <Button id="_IDGenButton" text="Open Dialog" icon="sap-icon://action" press=".onClickDialog"/>
+        </VBox>
+    </Page>  -->
+    <Page id="_IDGenPage" showHeader="true">
+        <customHeader>
+			<Bar id="_IDGenBar">
+				<contentRight>
+					<Button id="edit" text="Edit" press="handleEditPress" />
+					<Button id="save" text="Save" type="Emphasized" visible="false" press="handleSavePress" />
+					<Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
+				</contentRight>
+			</Bar>
+		</customHeader>
     </Page>
 </mvc:View>
+
