@@ -1,0 +1,59 @@
+{
+    "Address": [
+      {
+        "id": 1,
+        "name": "Rajesh Kumar",
+        "street": "221B Baker Street",
+        "landmark": "Near Police Station",
+        "city": "London",
+        "state": "Greater London",
+        "zipcode": "NW1 6XE",
+        "country": "United Kingdom",
+        "phone": "+44-20-7946-0958"
+      },
+      {
+        "id": 2,
+        "name": "Anjali Verma",
+        "street": "14 MG Road",
+        "landmark": "Opposite City Mall",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "zipcode": "560001",
+        "country": "India",
+        "phone": "+91-80-1234-5678"
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "street": "742 Evergreen Terrace",
+        "landmark": "Near Springfield Park",
+        "city": "Springfield",
+        "state": "Illinois",
+        "zipcode": "62704",
+        "country": "USA",
+        "phone": "+1-217-555-1234"
+      },
+      {
+        "id": 4,
+        "name": "Sophia Müller",
+        "street": "Hauptstrasse 45",
+        "landmark": "Next to Stadt Library",
+        "city": "Berlin",
+        "state": "Berlin",
+        "zipcode": "10115",
+        "country": "Germany",
+        "phone": "+49-30-12345678"
+      },
+      {
+        "id": 5,
+        "name": "Li Wei",
+        "street": "88 Nanjing Road",
+        "landmark": "Near People's Square",
+        "city": "Shanghai",
+        "state": "Shanghai",
+        "zipcode": "200003",
+        "country": "China",
+        "phone": "+86-21-1234-5678"
+      }
+    ]
+  }

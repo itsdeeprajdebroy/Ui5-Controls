@@ -1,0 +1,52 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+	xmlns="sap.ui.layout">
+    <Grid id="_IDGenGrid3" 
+        defaultSpan="L4 M6 S12">
+        <!-- <m:VBox id="_IDGenVBox4"> -->
+            <m:VBox id="_IDGenVBox5" >
+                <m:Label id="_IDGenLabel3" text="{emp1>name}"/>
+                <m:Label id="_IDGenLabel6"  text="{emp1>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData1" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+            <m:VBox id="_IDGenVBox6" >
+                <m:Label id="_IDGenLabel7" text="{emp2>name}"/>
+                <m:Label id="_IDGenLabel8" text="{emp2>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData2" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+            <m:VBox id="_IDGenVBox7" >
+                <m:Label id="_IDGenLabel9" text="{emp3>name}"/>
+                <m:Label id="_IDGenLabel10" text="{emp3>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData3" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+            <m:VBox id="_IDGenVBox8" >
+                <m:Label id="_IDGenLabel11" text="{emp4>name}"/>
+                <m:Label id="_IDGenLabel12" text="{emp4>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData4" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+            <m:VBox id="_IDGenVBox9" >
+                <m:Label id="_IDGenLabel13" text="{emp5>name}"/>
+                <m:Label id="_IDGenLabel14" text="{emp5>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData5" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+            <m:VBox id="_IDGenVBox10" >
+                <m:Label id="_IDGenLabel15" text="{emp6>name}"/>
+                <m:Label id="_IDGenLabel16" text="{emp6>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData6" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+        <!-- </m:VBox> -->
+    </Grid>
+</mvc:View>

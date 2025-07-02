@@ -1,0 +1,19 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+    xmlns:l="sap.ui.layout">
+    <l:Grid id="_IDGenGrid" defaultSpan="L12 M12 S12">
+        <m:List id="_IDGenList" items="{raju>/Address/}" growing="true" growingThreshold="2">
+            <m:ObjectListItem 
+                id="_IDGenObjectListItem" 
+                icon="sap-icon://chain-link" 
+                number="{raju>phone}" 
+                numberUnit="{raju>zipcode}" 
+                title="{raju>name}"
+                type="Navigation"
+                numberState="Success">
+            </m:ObjectListItem>
+        </m:List>
+    </l:Grid>
+</mvc:View>

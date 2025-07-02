@@ -1,0 +1,29 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:layout="sap.ui.layout">
+    <f:Form id="_IDGenForm2">
+        <f:layout>
+            <f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout1" 
+                labelSpanL="3"
+                adjustLabelSpan="false"
+                emptySpanL="4"
+                columnsL="1"
+                singleContainerFullSize="false" />
+        </f:layout>
+
+        <f:formContainers>
+            <f:FormContainer id="_IDGenFormContainer1">
+                <f:formElements>
+                    <f:FormElement id="_IDGenFormElement" label="Age">
+                        <f:fields>
+                            <m:Text id="_IDGenText" text="It is undisclosed"  />
+                        </f:fields>
+                    </f:FormElement>
+                </f:formElements>
+            </f:FormContainer>
+        </f:formContainers>
+    </f:Form>
+</mvc:View>

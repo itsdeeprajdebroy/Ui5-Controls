@@ -33,13 +33,7 @@
                 <f:formElements>
                     <f:FormElement id="_IDGenFormElement1" label="Name">
                         <f:fields>
-							<Text id="_IDGenText1" text="{name}" />
-                            <Text id="_IDGenText2" text="{country}" >
-                                <layoutData>
-                                    <l:GridData id="_IDGenGridData1" 
-                                     span="L6 M2 S12"/>
-                                </layoutData>
-                            </Text>
+							<Text id="_IDGenText1" text="{name}  {country}" />
 						</f:fields>
                     </f:FormElement>
                     <f:FormElement id="_IDGenFormElement3"  label="Street">
@@ -49,13 +43,7 @@
                     </f:FormElement>
                     <f:FormElement id="_IDGenFormElement4"  label="Landmark">
                         <f:fields>
-							<Text id="_IDGenText4"  text="{landmark}"/>
-                            <Text id="_IDGenText5"  text="{city}">
-                                <layoutData>
-                                    <l:GridData id="_IDGenGrid" 
-                                     span="L6 M2 S12"/>
-                                </layoutData>
-                            </Text>
+							<Text id="_IDGenText4"  text="{landmark}  {city}"/>
 						</f:fields>
                     </f:FormElement>
                     <f:FormElement id="_IDGenFormElement5"  label="Phone">

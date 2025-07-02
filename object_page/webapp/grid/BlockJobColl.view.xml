@@ -1,0 +1,25 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+	xmlns="sap.ui.layout">
+    <Grid 
+        id="_IDGenGrid1" defaultSpan="L4 M6 S12">
+        <!-- <m:VBox id="_IDGenVBox1" > -->
+            <m:VBox id="_IDGenVBox2" >
+                <m:Label id="_IDGenLabel4" text="{emp1>name}"/>
+                <m:Label id="_IDGenLabel5" text="{emp1>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGridData" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+                
+            <m:VBox id="_IDGenVBox3" >
+                <m:Label id="_IDGenLab" text="{emp2>name}"/>
+                <m:Label id="_IDGenLabe" text="{emp2>job}"/>
+                <m:layoutData>
+                    <GridData id="_IDGenGdData" span="L12 M12 S12"/>
+                </m:layoutData>
+            </m:VBox>
+        <!-- </m:VBox> -->
+    </Grid>
+</mvc:View>

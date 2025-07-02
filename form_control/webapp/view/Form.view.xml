@@ -2,7 +2,7 @@
     controllerName="sap.ff.formcontrol.controller.Form"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:l="sap.ui.layout"
+    xmlns:layout="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form"
 	xmlns:core="sap.ui.core">
     <!-- <Page id="page" title="{i18n>title}">
@@ -19,7 +19,7 @@
 					<Button id="cancel" text="Cancel" visible="false" press="handleCancelPress" />
 				</contentRight>
 			</Bar>
-		</customHeader>
+		</customHeader> 
     </Page>
 </mvc:View>
 

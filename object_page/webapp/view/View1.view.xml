@@ -1,0 +1,173 @@
+<mvc:View controllerName="sap.mp.objectpage.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:layout="sap.ui.layout"
+	xmlns:Block="sap.mp.objectpage.blocks"
+	xmlns:Grids="sap.mp.objectpage.grid">
+    <ObjectPageLayout 
+        id="_IDGenObjectPageLayout" 
+        alwaysShowContentHeader="true"
+        backgroundDesignAnchorBar="Solid"
+        enableLazyLoading="true"
+        useIconTabBar="true"
+		showTitleInHeaderContent="true">
+		<!-- Title  -->
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle 
+                id="_IDGenObjectPageDynamicHeaderTitle" >
+                <expandedHeading>
+                    <m:Title 
+                        id="_IDGenTitle" 
+                        text="Deepraj Debroy" wrapping="true"/>
+                </expandedHeading>
+
+                <snappedHeading>
+                    <m:FlexBox 
+                    id="_IDGenFlexBox" >
+                        <m:Avatar id="_IDGenAvatar1" src="http://bit.ly/3TLEvEi" class="sapUiTinyMarginEnd"/>
+						<m:Title id="_IDGenTitle1" text="Deepraj Debroy" wrapping="true" />
+                    </m:FlexBox>
+                </snappedHeading>
+
+                <expandedContent>
+					<m:Text id="_IDGenText1" text="Senior UI Developer"/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text id="_IDGenText2" text="Senior UI Developer"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title id="_IDGenTitle2" text="Senior UI Developer"/>
+				</snappedTitleOnMobile>
+
+                <actions>
+					<m:Button id="_IDGenButton1" text="Edit" type="Emphasized" press="onEdit" tooltip="edit"/>
+					<m:Button id="_IDGenButton2" type="Transparent" text="Delete" tooltip="delete"/>
+					<m:Button id="_IDGenButton3" type="Transparent" text="Copy" tooltip="copy"/>
+					<m:OverflowToolbarButton id="_IDGenOverflowToolbarButton" icon="sap-icon://action" type="Transparent" text="Share" tooltip="action"/>
+				</actions>
+
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+
+		<!-- header  -->
+        <headerContent>
+			<m:FlexBox id="_IDGenFlexBox2" wrap="Wrap" fitContainer="true" >
+				<m:Avatar id="_IDGenAvatar" class="sapUiSmallMarginEnd" src="http://bit.ly/3TLEvEi" displaySize="L" />
+
+				<layout:VerticalLayout id="_IDGenVerticalLayout" class="sapUiSmallMarginBeginEnd">
+					<m:Link id="_IDGenLink" text="+33 6 4512 5158"/>
+					<m:Link id="_IDGenLink1" text="deeprajdebroy1234@gmail.com"/>
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiSmallMarginBeginEnd">
+					<m:Label id="_IDGenLabel" text="Hello! I am Deepraj and I use UxAP"/>
+					<m:VBox id="_IDGenVBox">
+						<m:Title id="_IDGenLabel1" text="Achieved goals"/>
+						<m:ProgressIndicator id="_IDGenProgressIndicator" percentValue="30" displayValue="30%"/>
+					</m:VBox>
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout id="_IDGenVerticalLayout2" class="sapUiSmallMarginBeginEnd">
+					<m:Label id="_IDGenLabel2" text="San Jose, USA"/>
+				</layout:VerticalLayout>
+
+                <m:ToolbarSpacer id="_IDGenToolbarSpacer" width="8rem" />
+
+                <m:VBox id="_IDGenVerticalLayou" class="sapUiSmallMarginBeginEnd">
+					<m:SearchField id="_IDGenSearchField" placeholder="Search anything about me" width="20rem"></m:SearchField>
+				</m:VBox>
+			</m:FlexBox>
+		</headerContent>
+
+		<!-- content-section  -->
+		<sections>
+			<ObjectPageSection 
+				id="_IDGenObjectPageSection"
+				title="My Course"
+				titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection 
+						id="_IDGenObjectPageSubSection"
+						titleUppercase="false"
+						title="Course">
+						<blocks>
+							<Block:BlockCourse id="_IDGenBlockCourse" columnLayout="4" />
+						</blocks>
+						<moreBlocks>
+							<Block:BlockCourse id="_IDGenBlockCours"/>
+						</moreBlocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection id="_IDGenObjectPageSubSection1" 
+						titleUppercase="false"
+						title="Announcement">
+							<blocks>
+								<Block:BlockAnnounce id="list" >
+									<Block:mappings>
+										<ModelMapping 
+											id="_IDGenModelMapping" 
+											externalModelName="Raj" 
+											externalPath="/Address/" 
+											internalModelName="raju"/>
+									</Block:mappings>
+								</Block:BlockAnnounce>
+							</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection 
+				id="_IDGenObjectPageSection2"
+				title="Income"
+				titleUppercase="false">
+				<subSections>
+					<ObjectPageSubSection 
+						id="_IDGenObjectPageSubSection2" 
+						title="Income Details"
+						titleUppercase="false">
+						<blocks>
+							<Grids:BlockJob id="_IDGenBlockJob" showSubSectionMore="true" >
+								<Grids:mappings>
+									<ModelMapping 
+										id="_IDGenModelMapping1" 
+										externalModelName="HR" 
+										externalPath="/Employee/0/" 
+										internalModelName="emp1"/>
+									<ModelMapping 
+										id="_IDGenModelMap" 
+										externalModelName="HR" 
+										externalPath="/Employee/1/" 
+										internalModelName="emp2"/>
+									<ModelMapping 
+										id="_IDGenModelMappin1" 
+										externalModelName="HR" 
+										externalPath="/Employee/2/" 
+										internalModelName="emp3"/>
+									<ModelMapping 
+										id="_IDGenModelMappi1" 
+										externalModelName="HR" 
+										externalPath="/Employee/3/" 
+										internalModelName="emp4"/>
+									<ModelMapping 
+										id="_IDGenModelMappng1" 
+										externalModelName="HR" 
+										externalPath="/Employee/4/" 
+										internalModelName="emp5"/>
+									<ModelMapping 
+										id="_IDGenModlMapping1" 
+										externalModelName="HR" 
+										externalPath="/Employee/5/" 
+										internalModelName="emp6"/>
+								</Grids:mappings>
+							</Grids:BlockJob >
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+
+    </ObjectPageLayout>
+</mvc:View>
