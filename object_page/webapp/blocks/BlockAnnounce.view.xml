@@ -4,7 +4,7 @@
     xmlns="sap.uxap"
     xmlns:l="sap.ui.layout">
     <l:Grid id="_IDGenGrid" defaultSpan="L12 M12 S12">
-        <m:List id="_IDGenList" items="{raju>/Address/}" growing="true" growingThreshold="2">
+        <m:List id="_IDGenList" items="{raju>/Address/}" growing="true" growingThreshold="2" mode="MultiSelect">
             <m:ObjectListItem 
                 id="_IDGenObjectListItem" 
                 icon="sap-icon://chain-link" 

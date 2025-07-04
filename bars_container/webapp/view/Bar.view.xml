@@ -1,0 +1,61 @@
+<mvc:View controllerName="sap.bar.barscontainer.controller.Bar"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage" >
+    <Page id="page" title="{i18n>title}">
+        <subHeader>
+            <!-- <Bar id="_IDGenBar" >
+                <contentLeft>
+                    
+                </contentLeft>
+                <contentMiddle>
+                    <Label id="_IDGenLabel" text="Search Box">
+                    </Label>
+                </contentMiddle>
+                <contentRight>
+                    <SearchField id="_IDGenSearchField" value="Search anything"></SearchField>
+                </contentRight>
+            </Bar> -->
+            <Toolbar id="_IDGenToolbar1" class="display-flex">
+                    <Label id="_IDGenLabel" text="Search Box"/>
+                    <SearchField id="_IDGenSearchField" value="Search anything" width="60%">
+                        <layoutData>
+                            <ToolbarLayoutData id="_IDGenToolbarLayoutData" shrinkable="false"></ToolbarLayoutData>
+                        </layoutData>
+                    </SearchField>
+            </Toolbar>
+        </subHeader>
+        <footer>
+            <Bar id="_IDGenToolbar" >
+                <contentRight>
+                    <Button id="_IDGenButton" text="New Button" type="Accept" badgeStyle="Attention"></Button>   
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</Page>
+</mvc:View>
+
+
+
+<!-- 
+<Table items="{user>/data}" id="idUsersTable" alternateRowColors="true">
+  <headerToolbar>
+    <Toolbar id="_IDGenToolbar1">
+      <Title id="_IDGenTitle" text="User and Roles" />
+    </Toolbar>
+  </headerToolbar>
+  <columns>
+    <Column id="_IDGenColumn"><Text id="_IDGenText" text="Key"/></Column>
+    <Column id="_IDGenColumn1"><Text id="_IDGenText1" text="Value"/></Column>
+  </columns>
+  <items>
+    <ColumnListItem id="_IDGenColumnListItem1">
+      <cells>
+        <Text id="_IDGenText2" text="{user>key}" />
+        <Text id="_IDGenText3" text="{user>value}" wrapping="true" />
+      </cells>
+    </ColumnListItem>
+  </items>
+</Table> 
+-->
