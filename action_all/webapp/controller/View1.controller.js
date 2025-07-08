@@ -9,6 +9,10 @@ sap.ui.define([
 
         onClickList: function() {
             this.getOwnerComponent().getRouter().navTo("RouteFilterList")
+        },
+
+        onClickSort: function() {
+            this.getOwnerComponent().getRouter().navTo("RouteSort")
         }
     });
 });

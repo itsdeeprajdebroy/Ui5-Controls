@@ -1,0 +1,19 @@
+<mvc:View controllerName="sap.po.actionall.controller.Sorter-Group"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page_3">
+        <subHeader>
+            <Toolbar id="_IDGenToolbar_2" >
+                <Button id="_IDGenButton2" icon="sap-icon://sort" press=".onClickSortIconEmp"></Button>
+                <Button id="_IDGenButton_filter" icon="sap-icon://filter" press=".onClickFilIconEmp"></Button>
+            </Toolbar>
+        </subHeader>
+        <List id="_IDGenList1"  items="{path: 'Emp>/Employees'}">
+            <ObjectListItem id="_IDGenObjectListItem"  title="{Emp>Department}" number="{Emp>Age}" intro="{Emp>Name}">
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute1" text="{Emp>City}"></ObjectAttribute>
+                </attributes>
+            </ObjectListItem>
+        </List>
+    </Page>
+</mvc:View>

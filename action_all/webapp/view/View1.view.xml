@@ -4,6 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <VBox id="_IDGenVBox" class="sapUiSmallMargin">
             <Button id="_IDGenButton" text="List-Filter" icon="sap-icon://list" press=".onClickList"/>
+            <Button id="_IDGenButtonSorter" text="List-Sorter" icon="sap-icon://sort" press=".onClickSort"/>
         </VBox>
     </Page>
 </mvc:View>

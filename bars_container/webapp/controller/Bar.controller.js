@@ -31,7 +31,7 @@ sap.ui.define([
                 return value
             }
             else{
-                const dat = data.map((ele) => {
+                const dat = value.map((ele) => {
                     const str = ele.split(",")[0]
                     const len = str.length
                     return str.substring(3, len+1)

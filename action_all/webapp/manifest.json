@@ -105,6 +105,13 @@
           "target": [
             "TargetView2"
           ]
+        },
+        {
+          "name": "RouteSort",
+          "pattern": "SortList",
+          "target": [
+            "TargetView3"
+          ]
         }
       ],
       "targets": {
@@ -115,6 +122,10 @@
         "TargetView2": {
           "id": "FilterList",
           "name": "FilterList"
+        },
+        "TargetView3": {
+          "id": "Sorter-Group",
+          "name": "Sorter-Group"
         }
       }
     },
