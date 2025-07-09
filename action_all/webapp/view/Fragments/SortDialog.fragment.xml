@@ -1,0 +1,43 @@
+<core:FragmentDefinition 
+    id="_IDGenFragmentDefination" 
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Dialog 
+        id="_IDGenDialog" >
+        <customHeader>
+            <Bar id="_IDGenBar" >
+                <contentMiddle>
+                    <Title id="_IDGenTitle" text="Sort"/>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <content>
+            <VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+                <Toolbar id="_IDGenToolbar1" >
+                    <Label id="_IDGenTitle_1" text="Sort Order"/>
+                </Toolbar>
+                <Select id="_IDGenSelect">
+                    <items>
+                        <core:Item id="_IDGenItem" text="Ascending" key="asc"/>
+                        <core:Item id="_IDGenItem_1" text="Descending" key="desc"/>
+                    </items>
+                </Select>
+                <Toolbar id="_IDGenToolbar2" >
+                    <Label id="_IDGenTitle_2" text="Sort By"/>
+                </Toolbar>
+                <Select id="_IDGenSelect_2" >
+                    <items>
+                        <core:Item id="_IDGenItem_11" text="Name" key="Name"/>
+                        <core:Item id="_IDGenItem_12" text="Age" key="Age"/>
+                    </items>
+                </Select>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button id="_IDGenButton3" text="Apply" press="onSortApply"/>
+        </beginButton>
+        <endButton>
+            <Button id="_IDGenButton1" text="Cancel" press="onDialogClose" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

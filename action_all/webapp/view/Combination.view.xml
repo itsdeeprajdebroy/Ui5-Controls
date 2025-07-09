@@ -1,0 +1,20 @@
+<mvc:View controllerName="sap.po.actionall.controller.Combination"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page_4">
+        <subHeader>
+            <Toolbar id="_IDGenToolbar_3" class="RightAlign">
+                    <Button id="_IDGenButton2_All" icon="sap-icon://sort" press=".onClickSorting"></Button>
+                    <Button id="_IDGenButton_filter_All" icon="sap-icon://filter" press=".onClickFiltering"></Button>
+                    <Button id="_IDGenButton_group_All" icon="sap-icon://group-2" press=".onClickGrouping"></Button>
+            </Toolbar>
+        </subHeader> 
+        <List id="_IDGenList_All" items="{path: 'Emp>/Employees'}">
+            <ObjectListItem id="_IDGenObjectListItem-All" title="{Emp>Name}" number="{Emp>Age}" type="Navigation">
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute_1" text="{Emp>City} | Dept: {Emp>Department}"></ObjectAttribute>
+                </attributes>
+            </ObjectListItem>
+        </List>
+    </Page>
+</mvc:View>

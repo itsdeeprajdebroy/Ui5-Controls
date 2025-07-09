@@ -13,6 +13,10 @@ sap.ui.define([
 
         onClickSort: function() {
             this.getOwnerComponent().getRouter().navTo("RouteSort")
+        },
+
+        onClickNext: function() {
+            this.getOwnerComponent().getRouter().navTo("RouteAll")
         }
     });
 });

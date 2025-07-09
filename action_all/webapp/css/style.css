@@ -1,1 +1,6 @@
 /* Enter your custom styles here */
+.RightAlign{
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+}

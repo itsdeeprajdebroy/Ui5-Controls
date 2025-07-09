@@ -1,0 +1,35 @@
+<core:FragmentDefinition 
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Dialog id="_IDGenDialog2" >
+        <customHeader>
+            <Bar id="_IDGenBar1" >
+                <contentMiddle>
+                    <Title id="_IDGenTitle1" text="Filter"/>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <content>
+            <VBox id="_IDGenVBox3"  class="sapUiSmallMargin">
+                <Toolbar id="_IDGenToolbar3"  >
+                    <Label id="_IDGenLabel"  text="Filter By"/>
+                </Toolbar>
+                <Select id="_IDGenSelect1" >
+                    <items>
+                        <core:Item id="_IDGenItem2" key="All" text="All"/>
+                        <core:Item id="_IDGenItem3" key="IT" text="IT"/>
+                        <core:Item id="_IDGenItem4" key="HR" text="HR"/>
+                        <core:Item id="_IDGenItem5" key="Finance" text="Finance"/>
+                        <core:Item id="_IDGenItem6" key="Marketing" text="Marketing"/>
+                    </items>
+                </Select>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button id="_IDGenButton4" text="Apply" press="onFilterApply"/>
+        </beginButton>
+        <endButton>
+            <Button id="_IDGenButton5" text="Cancel" press="onDialogClose" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

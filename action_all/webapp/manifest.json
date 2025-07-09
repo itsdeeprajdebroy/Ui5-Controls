@@ -112,6 +112,13 @@
           "target": [
             "TargetView3"
           ]
+        },
+        {
+          "name": "RouteAll",
+          "pattern": "All",
+          "target": [
+            "TargetView4"
+          ]
         }
       ],
       "targets": {
@@ -126,6 +133,10 @@
         "TargetView3": {
           "id": "Sorter-Group",
           "name": "Sorter-Group"
+        },
+        "TargetView4": {
+          "id": "Combination",
+          "name": "Combination"
         }
       }
     },
