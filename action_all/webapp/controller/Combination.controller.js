@@ -20,14 +20,12 @@ sap.ui.define([
             const bDescending = orderSelectedKey === 'asc' ? false : true
 
             const aSorter = [new Sorter(bySelectedKey, bDescending)]
-            this.oBinding = this.byId("_IDGenList_All").getBinding("items")
             this.oBinding.sort(aSorter)
             oEvent.getSource().getParent().close()
         },
 
         onFilterApply: function(oEvent) {
             const bySelectedKey = this.byId("_IDGenSelect1")?.getSelectedKey()
-            this.oBinding = this.byId("_IDGenList_All")?.getBinding("items")
 
             if(bySelectedKey === 'All') this.oBinding?.filter([])
             else{
@@ -39,7 +37,6 @@ sap.ui.define([
 
         onGroupApply: function(oEvent) {
             const bySelectedKey = this.byId("_IDGenSelect2")?.getSelectedKey()
-            this.oBinding = this.byId("_IDGenList_All")?.getBinding("items")
 
             const aGroup = [new Sorter(bySelectedKey, true, function(oContext){
                 const sValue = oContext.getProperty(bySelectedKey)
@@ -53,6 +50,7 @@ sap.ui.define([
         },
 
         _loadFragment: function(nameFragment) {
+            this.oBinding = this.byId("_IDGenList_All").getBinding("items")
             var that = this
             return Fragment.load({
                 name: "sap.po.actionall.view.Fragments." + nameFragment,
