@@ -119,6 +119,13 @@
           "target": [
             "TargetView4"
           ]
+        },
+        {
+          "name": "RouteInView",
+          "pattern": "InView",
+          "target": [
+            "TargetView5"
+          ]
         }
       ],
       "targets": {
@@ -137,6 +144,10 @@
         "TargetView4": {
           "id": "Combination",
           "name": "Combination"
+        },
+        "TargetView5": {
+          "id": "AllInView",
+          "name": "AllInView"
         }
       }
     },

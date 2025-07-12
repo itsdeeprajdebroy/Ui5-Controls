@@ -17,6 +17,10 @@ sap.ui.define([
 
         onClickNext: function() {
             this.getOwnerComponent().getRouter().navTo("RouteAll")
+        },
+
+        onClickPlus: function() {
+            this.getOwnerComponent().getRouter().navTo("RouteInView")
         }
     });
 });

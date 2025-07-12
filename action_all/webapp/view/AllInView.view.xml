@@ -1,0 +1,20 @@
+<mvc:View controllerName="sap.po.actionall.controller.AllInView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page_5">
+        <List id="_IDGenList2" items="{ 
+                                    path: 'Emp>/Employees', 
+                                    sorter: {
+                                        path: 'Emp>Department', 
+                                        descending: true, 
+                                        group: true
+                                    }
+                                }">
+            <ObjectListItem id="_IDGenObjectListItem1"  title="{Emp>Name}" number="{Emp>Age}" type="Navigation">
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute2" text="{Emp>City} | Dept: {Emp>Department}"></ObjectAttribute>
+                </attributes>
+            </ObjectListItem>
+        </List>
+    </Page>
+</mvc:View>
