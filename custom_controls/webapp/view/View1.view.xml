@@ -1,0 +1,14 @@
+<mvc:View controllerName="sap.custom.customcontrols.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:header="sap.custom.customcontrols.controls">
+    <Page id="page">
+        <VBox id="_IDGenVBox" class="sapUiTinyMargin">
+            <Text id="_IDGenText" text="This is simple Text"></Text>
+            <!-- This is my custom controll code -->
+            <header:myHeader text="Walaa" color="red" border="2px solid green"></header:myHeader>
+            <header:myHeader text="Waa kya baat h" color="green"></header:myHeader>
+            <header:myButton text="Naya Button" move=".onMove"></header:myButton>
+        </VBox>
+    </Page>
+</mvc:View>
