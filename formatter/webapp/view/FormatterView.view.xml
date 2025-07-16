@@ -1,0 +1,20 @@
+<mvc:View controllerName="sap.raj.formatter.controller.FormatterView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage" >
+        <List id="_IDGenList" items="{path : '/Customers'}">
+            <ObjectListItem id="_IDGenObjectListItem" title="{
+                                                                parts: [
+                                                                    {path: 'Address'},
+                                                                    {path: 'PostalCode'}
+                                                                ],
+                                                                formatter : '.myFormatter.myCombiner'
+                                                        }" >
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute" text="{ContactName}" />
+                    <ObjectAttribute id="_IDGenObjectAttribute_2" text="{path : 'Country', formatter : '.myFormatter.myCustomFormatter'}" />
+                </attributes>
+            </ObjectListItem>
+        </List>
+    </Page>
+</mvc:View>

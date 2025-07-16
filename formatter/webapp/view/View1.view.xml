@@ -1,0 +1,9 @@
+<mvc:View controllerName="sap.raj.formatter.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" >
+        <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+            <Button id="_IDGenButton" text="Formatter" press=".onClickFormatter"/>
+        </VBox>
+    </Page>
+</mvc:View>
