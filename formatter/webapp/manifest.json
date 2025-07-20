@@ -102,6 +102,20 @@
           "target": [
             "TargetView2"
           ]
+        },
+        {
+          "name": "TableOne",
+          "pattern": "TableOne",
+          "target": [
+            "TargetView3"
+          ]
+        },
+        {
+          "name": "TableTwo",
+          "pattern": "TableTwo",
+          "target": [
+            "TargetView4"
+          ]
         }
       ],
       "targets": {
@@ -112,6 +126,14 @@
         "TargetView2": {
           "id": "FormatterView",
           "name": "FormatterView"
+        },
+        "TargetView3": {
+          "id": "TableOne",
+          "name": "TableOne"
+        },
+        "TargetView4": {
+          "id": "TableTwo",
+          "name": "TableTwo"
         }
       }
     },

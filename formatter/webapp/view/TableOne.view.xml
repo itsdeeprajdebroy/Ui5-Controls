@@ -1,0 +1,48 @@
+<mvc:View controllerName="sap.raj.formatter.controller.TableOne"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage1" >
+        <Table id="_IDGenTable" 
+            items="{path : '/Products'}" 
+            inset="true" 
+            growing="true" 
+            growingScrollToLoad="true" 
+            sticky="ColumnHeaders"
+            mode="SingleSelect">
+
+            <headerToolbar>
+                <OverflowToolbar id="_IDGenToolbar" >
+                    <SearchField id="_IDGenSearchField" width="60%"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer" />
+                    <Button id="_IDGenButton1" text="Edit"/>
+                </OverflowToolbar>
+            </headerToolbar>
+            <infoToolbar>
+                <Toolbar id="_IDGenToolbar1" >
+                    <Label id="_IDGenText" text="We have Products from Northwind"/>
+                </Toolbar>
+            </infoToolbar>
+            <columns>
+                <Column id="_IDGenColumn" >
+                    <Title id="_IDGenText1" text="Product Name"></Title>
+                </Column>
+                <Column id="_IDGenColumn_2" >
+                    <Title id="_IDGenText_2" text="Quantity Per Unit"></Title>
+                </Column>
+                <Column id="_IDGenColumn_3" >
+                    <Title id="_IDGenText_3" text="Unit Price"></Title>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem">
+                    <cells>
+                        <Text id="_IDGenText2" text="{ProductName}"></Text>
+                        <Text id="_IDGenText3" text="{QuantityPerUnit}"></Text>
+                        <Text id="_IDGenText4" text="{UnitPrice}"></Text>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

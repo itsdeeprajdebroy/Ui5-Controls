@@ -1,0 +1,8 @@
+<mvc:View controllerName="sap.raj.formatter.controller.TableTwo"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage2" >
+        
+    </Page>
+</mvc:View>

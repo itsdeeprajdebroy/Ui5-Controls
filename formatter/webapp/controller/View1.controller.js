@@ -9,6 +9,14 @@ sap.ui.define([
 
         onClickFormatter: function() {
             this.getOwnerComponent().getRouter().navTo("FormatterView")
+        },
+
+        onClickTableOne: function() {
+            this.getOwnerComponent().getRouter().navTo("TableOne")
+        },
+
+        onClickTableTwo: function() {
+            this.getOwnerComponent().getRouter().navTo("TableTwo")
         }
     });
 });
