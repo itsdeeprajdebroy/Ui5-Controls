@@ -1,0 +1,61 @@
+<core:FragmentDefinition 
+    xmlns:form="sap.ui.layout.form" 
+    id="_IDGenFragmentDefination" 
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Dialog id="_IDGenDialog" icon="sap-icon://collapse-group" title="Edit Table" >
+        <form:Form id="_IDGenFo" editable="true" >
+            <form:title>
+                <core:Title
+                    id="_IDGenTitl" 
+                    text="My Form" 
+                    icon="sap-icon://action-settings"/>
+            </form:title>
+
+            <form:layout>
+                <form:ResponsiveGridLayout 
+                    id="_IDGenResponsiveGridLayout"
+                    adjustLabelSpan="false"
+                    labelSpanL="4" 
+                    emptySpanL="0"
+                    columnsL="1"
+                    singleContainerFullSize="false"/>
+            </form:layout>
+
+            <form:formContainers>
+                <form:FormContainer id="_IDGenFormContainer" >
+                    <form:formElements>
+                        <form:FormElement id="_IDGenFormElement" label="Product Name">
+                            <form:fields>
+                                <Input value="{ProductName}" id="productName" />
+                                <Input value="{ProductID}" id="productId"/>
+                            </form:fields>
+                        </form:FormElement>
+                        <form:FormElement id="_IDGenFormElement2" label="Quantity">
+                            <form:fields>
+                                <Input id="_IDGenInput" value="{QuantityPerUnit}" />
+                            </form:fields>
+                        </form:FormElement>
+                        <form:FormElement id="_IDGenFormElement3"  label="Unit Price">
+                            <form:fields>
+                                <Input id="_IDGenInput1" value="{UnitPrice}" />
+                            </form:fields>
+                        </form:FormElement>
+                        <form:FormElement id="_IDGenFormElement4"  label="Units In Stock">
+                            <form:fields>
+                                <Input id="_IDGenInput2"  value="{UnitsInStock}" />
+                                <Text id="_IDText"  text="EUR" />
+                            </form:fields>
+                        </form:FormElement>
+                    </form:formElements>
+                </form:FormContainer>
+            </form:formContainers>
+        </form:Form>
+        <beginButton>
+            <Button id="_IDGenButton3" text="Save" press=".onClickSave"/>
+        </beginButton>
+        <endButton>
+            <Button id="_IDGenButton_" text="Cancel" press=".onClickCancel"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

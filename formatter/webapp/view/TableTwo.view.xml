@@ -3,6 +3,61 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="_IDGenPage2" >
-        
+        <Table id="_IDGenTable1" 
+               growing="true" 
+               growingThreshold="20" 
+               mode="SingleSelect" 
+               items="{path : '/Products'}" 
+               sticky="ColumnHeaders,HeaderToolbar" 
+               inset="true">
+            <headerToolbar>
+                <OverflowToolbar id="_IDGenOverflowToolbar1" >
+                    <SearchField id="_IDGenSearchField1" width="60%"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer1"  />
+                    <Button id="_IDGenButton2"  text="Edit" press=".onEditPress"/>
+                    <Button id="_IDGenButto"  text="Add" press=".onPressAddColumn"/>
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column id="_IDGenColumn2" 
+                        hAlign="Begin">
+                    <header>
+                        <Title id="_IDGenTitle" 
+                               text="Product Name"></Title>
+                    </header>
+                </Column>
+                <Column id="_IDGenColumn3" 
+                        hAlign="End">
+                    <Title id="_IDGenTitle2"  
+                           text="Quantity"></Title>
+                </Column>
+                <Column id="_IDGenColumn4" 
+                        minScreenWidth="tablet" 
+                        demandPopin="true">
+                    <Title id="_IDGenTitle3"  
+                           text="Unit Price"></Title>
+                </Column>
+                <Column id="_IDGenColumn5" >
+                    <Title id="_IDGenTitle4"  
+                           text="Units In Stock"></Title>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem1" >
+                    <cells>
+                        <ObjectIdentifier id="_IDGenObjectIdentifier" 
+                                          title="{ProductName}" 
+                                          text="{ProductID}"></ObjectIdentifier>
+                        <Text id="_IDGenText5" 
+                              text="{QuantityPerUnit}"></Text>
+                        <Text id="_IDGenText6" 
+                              text="{UnitPrice}"></Text>
+                        <ObjectNumber id="_IDGenObjectNumber" 
+                                      number="{UnitsInStock}" 
+                                      unit="EUR"></ObjectNumber>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
     </Page>
 </mvc:View>
