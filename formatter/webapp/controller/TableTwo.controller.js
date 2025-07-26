@@ -74,6 +74,8 @@ sap.ui.define([
         onClickSave: function(){
             this.oDialog.close()
             sap.m.MessageToast.show("Changes saved successfully!");
+            const oTable = this.byId("_IDGenTable1")
+            oTable.removeSelections(); 
         },
 
         onClickCancel: function(){
@@ -89,6 +91,8 @@ sap.ui.define([
                 oModel.setProperty(this.oDialog.getBindingContext().getPath() + '/' + key, this.oOriginalData[key])
             })
             this.oDialog.close()
+            const oTable = this.byId("_IDGenTable1")
+            oTable.removeSelections(); 
             sap.m.MessageToast.show("Changes are not saved!");
         }
     });

@@ -25,6 +25,22 @@ sap.ui.define(
                     return "Neighbor"
                 else
                     return "International"
+            },
+
+            formatCurrency: function(curr, code) {
+                //isNaN - is Not a number
+                const getUserLocale = sap.ui.getCore().getConfiguration().getLocale()
+                const showCode = code !== "INR"
+                //Set Locale object - new sap.ui.core.Locale(sStringLocale) -> en_US, hi_IN, de_DE
+                if(isNaN(curr) || !code){
+                    return "N/A"
+                }
+                const oCurrencyInstance = sap.ui.core.format.NumberFormat.getCurrencyInstance({
+                    showMeasure: showCode,
+                    currencyCode: false,
+                    decimals: 2
+                }, getUserLocale)
+                return oCurrencyInstance.format(curr, code)
             }
         }
     }

@@ -67,6 +67,10 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "Currency": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
       }
     },
     "resources": {
@@ -116,6 +120,13 @@
           "target": [
             "TargetView4"
           ]
+        },
+        {
+          "name": "TableCurr",
+          "pattern": "TableCurr",
+          "target": [
+            "TargetView5"
+          ]
         }
       ],
       "targets": {
@@ -134,6 +145,10 @@
         "TargetView4": {
           "id": "TableTwo",
           "name": "TableTwo"
+        },
+        "TargetView5": {
+          "id": "TableCurr",
+          "name": "TableCurr"
         }
       }
     },

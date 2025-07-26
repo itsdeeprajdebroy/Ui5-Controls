@@ -7,6 +7,7 @@
             <Button id="_IDGenButton" text="Formatter" press=".onClickFormatter"/>
             <Button id="_IDGenButton_2" text="Table 1" press=".onClickTableOne"/>
             <Button id="_IDGenButton_3" text="Table 2" press=".onClickTableTwo"/>
+            <Button id="_IDGenButton_4" text="Table 3" press=".onClickTableThree"/>
         </VBox>
     </Page>
 </mvc:View>

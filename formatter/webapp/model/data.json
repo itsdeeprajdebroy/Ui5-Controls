@@ -1,0 +1,24 @@
+{
+    "Products": [
+      { "Product": "Laptop", "Amount": 85000, "CurrencyCode": "INR" },
+      { "Product": "Monitor", "Amount": 300.99, "CurrencyCode": "USD" },
+      { "Product": "Tablet", "Amount": 450.49, "CurrencyCode": "EUR" },
+      { "Product": "Smartphone", "Amount": 599.99, "CurrencyCode": "GBP" },
+      { "Product": "Headphones", "Amount": 120.00, "CurrencyCode": "JPY" },
+      { "Product": "Smartwatch", "Amount": 349.95, "CurrencyCode": "AUD" },
+      { "Product": "Gaming Console", "Amount": 399.00, "CurrencyCode": "CAD" },
+      { "Product": "Camera", "Amount": 799.49, "CurrencyCode": "CHF" },
+      { "Product": "Printer", "Amount": 199.99, "CurrencyCode": "CNY" },
+      { "Product": "Keyboard", "Amount": 89.00, "CurrencyCode": "SEK" },
+      { "Product": "Mouse", "Amount": 49.99, "CurrencyCode": "NOK" },
+      { "Product": "Router", "Amount": 129.49, "CurrencyCode": "ZAR" },
+      { "Product": "Speaker", "Amount": 159.75, "CurrencyCode": "BRL" },
+      { "Product": "Projector", "Amount": 1100.00, "CurrencyCode": "SGD" },
+      { "Product": "External HDD", "Amount": 120.25, "CurrencyCode": "MXN" },
+      { "Product": "SSD", "Amount": 145.89, "CurrencyCode": "HKD" },
+      { "Product": "Microphone", "Amount": 89.65, "CurrencyCode": "KRW" },
+      { "Product": "Webcam", "Amount": 115.00, "CurrencyCode": "THB" },
+      { "Product": "Desk Lamp", "Amount": 35.95, "CurrencyCode": "IDR" },
+      { "Product": "Chair", "Amount": 215.00, "CurrencyCode": "RUB" }
+    ]
+  }

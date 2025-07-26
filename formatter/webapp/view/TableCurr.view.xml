@@ -1,0 +1,47 @@
+<mvc:View controllerName="sap.raj.formatter.controller.TableCurr"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage3" >
+        <Table id="_IDGenTable2" 
+               items="{Currency>/Products}"
+               inset="true"
+               growing="true"
+               growingThreshold="10">
+            <columns>
+                <Column id="_IDGenColumn1" hAlign="Begin">
+                    <Title id="_IDGenTitle1"  
+                               text="Product Name"/>
+                </Column>
+                <Column id="_IDGenColumn7"  hAlign="End">
+                    <Title id="_IDGenTitle5"   
+                               text="Amount with Code"/>
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem2" >
+                    <cells>
+                        <ObjectIdentifier id="_IDGenObjectIdentifier1"  
+                                          title="{Currency>Product}"/>
+                        <!-- <ObjectNumber id="_IDGenObjectNumber1"  
+                                      number="{
+                                        parts: [
+                                                {path: 'Currency>Amount'},
+                                                {path: 'Currency>CurrencyCode'}
+                                            ],
+                                        type: 'sap.ui.model.type.Currency',
+                                        formatOptions: {showMeasure: true,
+                                                        currencyCode: true}
+                                    }" 
+                               /> -->
+                               <ObjectNumber id="_IDGenObjectNumber1" 
+                                        number="{
+                                                    parts: [{path: 'Currency>Amount'},{path: 'Currency>CurrencyCode'}],
+                                                    formatter: '.myformatter.formatCurrency'
+                                                }"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

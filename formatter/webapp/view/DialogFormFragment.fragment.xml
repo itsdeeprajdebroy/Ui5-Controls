@@ -8,8 +8,8 @@
             <form:title>
                 <core:Title
                     id="_IDGenTitl" 
-                    text="My Form" 
-                    icon="sap-icon://action-settings"/>
+                    text="Product Info" 
+                    icon="sap-icon://product"/>
             </form:title>
 
             <form:layout>
