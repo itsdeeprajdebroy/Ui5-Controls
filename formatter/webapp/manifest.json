@@ -71,6 +71,10 @@
       "Currency": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/data.json"
+      },
+      "Date": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/date.json"
       }
     },
     "resources": {
@@ -127,6 +131,13 @@
           "target": [
             "TargetView5"
           ]
+        },
+        {
+          "name": "TableThree",
+          "pattern": "TableThree",
+          "target": [
+            "TargetView6"
+          ]
         }
       ],
       "targets": {
@@ -149,6 +160,10 @@
         "TargetView5": {
           "id": "TableCurr",
           "name": "TableCurr"
+        },
+        "TargetView6": {
+          "id": "TableThree",
+          "name": "TableThree"
         }
       }
     },

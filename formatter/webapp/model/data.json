@@ -1,6 +1,6 @@
 {
     "Products": [
-      { "Product": "Laptop", "Amount": 85000, "CurrencyCode": "INR" },
+      { "Product": "Laptop", "Amount": 8500000, "CurrencyCode": "USD" },
       { "Product": "Monitor", "Amount": 300.99, "CurrencyCode": "USD" },
       { "Product": "Tablet", "Amount": 450.49, "CurrencyCode": "EUR" },
       { "Product": "Smartphone", "Amount": 599.99, "CurrencyCode": "GBP" },

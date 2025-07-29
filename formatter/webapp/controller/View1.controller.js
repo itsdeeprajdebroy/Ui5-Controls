@@ -21,6 +21,10 @@ sap.ui.define([
 
         onClickTableThree: function() {
             this.getOwnerComponent().getRouter().navTo("TableCurr")
+        },
+
+        onClickTableFour: function() {
+            this.getOwnerComponent().getRouter().navTo("TableThree")
         }
     });
 });

@@ -1,0 +1,35 @@
+<mvc:View controllerName="sap.raj.formatter.controller.TableThree"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="_IDGenPage4" >
+        <Table id="_IDGenTable3" inset="true" growing="false" items="{Date>/Datetime}">
+            <columns>
+                <Column id="_IDGenColumn8"  hAlign="Begin">
+                    <Title id="_IDGenTitle6"  
+                               text="Name"/>
+                </Column>
+                <Column id="_IDGenColumn9"   hAlign="Center">
+                    <Title id="_IDGenTitle7"    
+                               text="Country"/>
+                </Column>
+                <Column id="_IDGenColumn10"    hAlign="End">
+                    <Title id="_IDGenTitle8" 
+                               text="Date-Time"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem3" >
+                    <cells>
+                        <ObjectIdentifier id="_IDGenObjectIdentifier2"   
+                                          text="{Date>Name}"/>
+                        <Text id="_IDGenText7" text="{Date>Country}"/>
+                        <Text id="_IDGenText8" text="{
+                                                        path: 'Date>LoginTime', 
+                                                        formatter: '.formatter.formatDateTime'
+                                                    }"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
