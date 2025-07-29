@@ -1,0 +1,17 @@
+<mvc:View controllerName="sap.mp.datetime.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+            <Label id="_IDGenLabel_1" text="Enter Date Time"/>
+            <DateTimePicker id="_IDGenDateTimePicker_1" change=".onDateCollect1"/>
+            <Label id="_IDGenLabel" text="UTC Value" visible="{myModel>/isVisible}"/>
+            <Text id="_IDGenText" />
+            <Label id="_IDGenLabe2" text="Local Value" visible="{myModel>/isVisible}"/>
+            <Text id="_IDGenText2" />
+            <!-- <Label id="_IDGenLabel_2" text="Enter Date Time Second"/>
+            <DateTimePicker id="_IDGenDateTimePicker_2" change=".onDateCollect2"/> -->
+            <Button id="_IDGenButton" text="Click to Add Date" press=".onPressButton"/>
+        </VBox>
+    </Page>
+</mvc:View>
