@@ -13,5 +13,6 @@
             <DateTimePicker id="_IDGenDateTimePicker_2" change=".onDateCollect2"/> -->
             <Button id="_IDGenButton" text="Click to Add Date" press=".onPressButton"/>
         </VBox>
+        <Button id="_IDGenButton_2" text="Next" press=".onPressButtonNext" icon="sap-icon://open-command-field"/>
     </Page>
 </mvc:View>

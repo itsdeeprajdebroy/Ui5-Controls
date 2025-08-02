@@ -52,6 +52,10 @@ sap.ui.define([
             } catch (error) {
                 console.log(error)
             }
+        },
+
+        onPressButtonNext: function(){
+            this.getOwnerComponent().getRouter().navTo("SpreadSheet")
         }
     });
 });

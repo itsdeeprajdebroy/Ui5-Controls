@@ -51,6 +51,10 @@
         "settings": {
           "bundleName": "sap.mp.datetime.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
       }
     },
     "resources": {
@@ -75,9 +79,16 @@
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "",
           "target": [
             "TargetView1"
+          ]
+        },
+        {
+          "name": "SpreadSheet",
+          "pattern": "SpreadSheet",
+          "target": [
+            "TargetView2"
           ]
         }
       ],
@@ -85,6 +96,10 @@
         "TargetView1": {
           "id": "View1",
           "name": "View1"
+        },
+        "TargetView2": {
+          "id": "SpreadSheet",
+          "name": "SpreadSheet"
         }
       }
     },
